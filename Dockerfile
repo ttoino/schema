@@ -1,8 +1,3 @@
-FROM alpine:latest
+FROM caddy:alpine
 
-WORKDIR /app
-
-COPY . .
-
-CMD [ "tail", "-f", "/dev/null" ]
-
+COPY . /usr/share/caddy
